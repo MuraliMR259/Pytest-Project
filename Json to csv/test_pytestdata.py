@@ -65,3 +65,18 @@ def test_c5(test_5):
 
 #test case 5 is end
 
+# import pytest
+# import pandas as pd
+# import datatest as dt
+# import json
+# @pytest. fixture(scope='session')
+# def json_to_csv():
+#        with open("orders_data.json") as jsonFile:
+#             d= json.load(jsonFile)
+#             return d
+# def test_1(json_to_csv):
+#         dt.validate(json_to_csv['total_count'],int)
+#         dt.validate(json_to_csv['base_currency_code'], str)
+
+
+
