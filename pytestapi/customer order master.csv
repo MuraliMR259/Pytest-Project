@@ -1,3 +1,0 @@
-OrderId,CustomerId,OrderDate,PaymentId,TotalQuantity,GrandTotal,TotalPaid,OrderStatus
-736908,463539,2021-03-09 04:28:37,2077077620,1,39.95,39.95,complete
-847019,574640,2021-04-09 04:28:37,2077077620,1,53.45,53.45,complete
