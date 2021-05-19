@@ -1,11 +1,13 @@
 import json
 import csv
+
 months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
 
 with open('orders_data.json') as json_file:
         data = json.load(json_file)
 
 class json_csv():
+
 
     def order_data1():
         fname1 = "Customers.csv"
@@ -47,6 +49,7 @@ class json_csv():
                 csv_file.writerow(["PaymentId","CustomerId","Method of Payment","Amount Paid","Card Type","Card last 4 digits","Card Expiry Month Year"])
                 for item in data["items"]:
                     csv_file.writerow([item["extension_attributes"]["payment_additional_info"][27]["value"],item["customer_id"],item["payment"]["method"],item["payment"]["amount_paid"],item["payment"]["cc_type"],item["payment"]["cc_last4"],str(months[int(item["payment"]["cc_exp_month"])+1] + '-' +str(item["payment"]["cc_exp_year"]))])
+
 class final():
     json_csv.order_data1()
     json_csv.order_data2()
