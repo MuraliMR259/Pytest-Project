@@ -1,5 +1,4 @@
 {
-
     "items": [
         {
             "base_currency_code": "USD",
@@ -74,7 +73,7 @@
             "total_qty_ordered": 1,
             "updated_at": "2021-03-09 04:28:37",
             "weight": 18,
-            "customer": [
+            "items": [
                 {
                     "amount_refunded": 0,
                     "base_amount_refunded": 0,
@@ -963,5 +962,4 @@
         "page_size": 2
     },
     "total_count": 6493
-
 }
