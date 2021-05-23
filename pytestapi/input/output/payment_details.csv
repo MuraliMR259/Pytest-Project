@@ -1,0 +1,3 @@
+PaymentId,CustomerId,Method of Payment,Amount Paid,Card Type,Card last 4 digits,Card Expiry Month Year
+2077077620,463539,authnetcim,39.95,visa,5034,Nov-2023
+2077077620,574640,authnetcim,53.45,visa,5034,Nov-2023
