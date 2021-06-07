@@ -3,12 +3,9 @@ import pandas as pd
 import boto3
 import io
 import site
-
 from importlib import reload
 import sys
-# from setuptools.command import easy_install
-# import os
-# import pyarrow
+
 reload(site)
 arg = sys.argv[2]
 print(sys.argv)
@@ -30,7 +27,6 @@ df = pd.read_csv(io.BytesIO(obj['Body'].read()))
 parquet_buffer = BytesIO()
 s3_resource = boto3.resource('s3')
 df.to_parquet(parquet_buffer, index=False)
-
 
 lst = ['customer']
 
